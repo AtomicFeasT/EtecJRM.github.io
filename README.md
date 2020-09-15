@@ -1,2 +1,2 @@
-# AtomicFeasT.github.io
-Site Institucional da ETEC feita em conjunto com os parceiros.
+Github para desenvolvimento do projeto do Site isntitucional da ETEC Jornalista Roberto Marinho em conjunto.
+

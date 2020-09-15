@@ -1,0 +1,14 @@
+$ cd
+$cd documents 
+
+$ ls 
+
+$ cd GitHub
+
+$ ls 
+
+$ cd Site-ETECJRM
+
+$ git branch
+
+$ git checkout (Nome da branch)
