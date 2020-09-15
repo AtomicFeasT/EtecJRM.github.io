@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-:root{
-    --nav-color: #ffffff;
-    --body-color: white;
+
+.theme-light {
+    --nav-color: #fff;
+    --body-color: #fff;
     --orange: #F68B37;
     --dark-orange: #820024;
+}
+
+.theme-dark {
+    --nav-color: #363841;
+    --body-color: #292b31;
+    --orange: #820024;
+    --dark-orange: #F68B37;
 }
 
 * {
@@ -19,12 +27,22 @@ body::-webkit-scrollbar-track{
     background: var(--dark-orange);
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-track.dark {
+    background: var(--orange);
+}
+
+body::-webkit-scrollbar-thumb {
     background: var(--dark-orange);
+}
+
+body::-webkit-scrollbar-thumb.dark {
+    background: var(--orange);
 }
 
 body {
     margin:0;   
+    width: 100%;
+    height: 100%;
     background-color: var(--body-color);
 }
     
