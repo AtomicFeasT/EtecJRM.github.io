@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --nav-color: #ffffff;
+    --body-color: white;
+    --orange: #F68B37;
+    --dark-orange: #820024;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--dark-orange);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--dark-orange);
+}
+
+body {
+    margin:0;   
+    background-color: var(--body-color);
+}
+    
+.rc_nav {
+    overflow: hidden;
+    background-color: var(--bg-color);
+    text-align: center;
+    z-index: 6;
+    border-bottom-style: solid;
+    border-color: var(--dark-orange);
+}
+
+.rc_nav a {
+    display: inline-block;
+    margin-right: -4px;
+    color: var(--dark-orange);
+    padding: 22px 22px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 18px;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -ms-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+    z-index: 9;
+}
+
+.rc_nav a:hover {
+    background-color: var(--dark-orange);
+    color: var(--orange);
+}
+
+.rc_nav .icon {
+    display: none;
+}
+
+.rc_content {
+    text-align: center; 
+    padding-left:14px; 
+    font-family: Poppins; 
+    margin-top: 100px;  
+    color: black;
+}
+
+.rc_nav .active {
+    background-color: var(--dark-orange);
+    color: var(--orange);
+}
+
+
+@media screen and (max-width: 820px) {
+    .rc_nav a {display: none;}
+    .rc_nav a.icon {
+    float: right;
+    display: block;
+    width: 60px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .rc_nav.responsive {position: relative; top: 73px;}
+    .rc_nav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+    }
+    .rc_nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    }
+
+}
