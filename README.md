@@ -1,4 +1,4 @@
-### **Github criado para desenvolvimento de site institucional [Etec Jornalista Roberto Marinho](https://atomicfeast.github.io/index.html)**
+### **Github criado para desenvolvimento de site institucional <a href="https://atomicfeast.github.io/index.html)" target="_blank"> ETEC Jornalista Roberto Marinho</a>**
 
 
 <hr />
