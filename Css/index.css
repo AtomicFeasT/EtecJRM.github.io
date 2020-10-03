@@ -129,7 +129,7 @@ body {
 }
 
 .rc_content .separador {
-  width: 200px;
+  width: 550px;
   height: 28px;
   float: right;
   background: var(--orange);
@@ -142,4 +142,10 @@ body {
 
 .rc_content div.menu svg g#layer102 {
     fill: var(--orange);
+}
+
+.rc_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
