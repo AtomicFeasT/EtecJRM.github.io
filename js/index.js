@@ -30,6 +30,6 @@ function toggleTheme() {
         document.getElementById('slider').checked = false;
     } else {
         setTheme('theme-light');
-      document.getElementById('slider').checked = true;
+        document.getElementById('slider').checked = true;
     }
 })();
