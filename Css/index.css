@@ -238,7 +238,7 @@ body {
 
 @media screen and (max-width: 1440px) {
   .rc_content .menu h2.fraseEtec {
-    margin-right: 18%;
+    margin-right: 19%;
   }
 
   .rc_content .menu .icones {
@@ -253,7 +253,7 @@ body {
 
 @media screen and (max-width: 1366px) {
   .rc_content .menu h2.fraseEtec {
-    margin-right: 15%;
+    margin-right: 16%;
   }
 
   .rc_content .menu .icones a svg {
@@ -267,6 +267,10 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+  .rc_content .menu h2.fraseEtec {
+    margin-right: 17%;
+  }
+
   .rc_content .menu h1.nomeEtec, .rc_content .menu h2 {
     font-size: 24px;
   }
@@ -297,6 +301,8 @@ body {
 
   .rc_content .menu h2.fraseEtec {
     margin-right: 13%;
+    text-align: left;
+    margin-left: 32%;
   }
   
   .rc_content .menu .icones {
@@ -357,5 +363,11 @@ body {
 
   .rc_content .menu .icones svg {
     padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .rc_content .menu h2.fraseEtec {
+    margin-right: 26%;
   }
 }
