@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('../Recursos/Fonte/Roboto.zip');
+@import url('../Recursos/Fonte/Slabo_27px.zip');
 
 .theme-light {
   --nav-color: #fff;
@@ -187,6 +188,7 @@ body {
 .rc_content .menu h2.fraseEtec {
   margin-right: 23%;
   color: var(--orange);
+  font-family: 'Slabo 27px', sans-serif !important;
 }
 
 .rc_content .menu .icones {
@@ -271,11 +273,89 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .rc_content .separador {
+    width: 100%;
+    margin-left: 0%;
+  }
+
   .rc_content .separador2 {
     margin-top: 6%;
+  }
+
+  .rc_content .menu #logoEtec {
+    margin-top: 10%;
+  }
+
+  .rc_content .menu h1.nomeEtec {
+    margin-top: 6%;
+    margin-left: 5%;
+  }
+
+  .rc_content .menu h1.redesSociais {
+    display: none;
+  }
+
+  .rc_content .menu h2.fraseEtec {
+    margin-right: 13%;
+  }
+  
+  .rc_content .menu .icones {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -18%;
   }
 }
 
 @media screen and (max-width: 820px) {
+  .rc_content .menu .icones {
+    margin-top: -22%;
+  }
 
+  .rc_content .menu #logoEtec {
+    margin-top: 12%;
+  }
+
+  .rc_content .menu h1.nomeEtec {
+    margin-left: 4%;
+     font-size: 22px;
+  }
+
+  .rc_content .menu h2.fraseEtec {
+    margin-right: 11%;
+    margin-left: 31%;
+    text-align: left;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rc_content .menu h1.nomeEtec {
+    font-size: 20px
+  }
+
+  .rc_content .menu .icones {
+    margin-top: -23%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rc_content .menu h1.nomeEtec {
+    font-size: 18px;
+    margin-top: 15%;
+    margin-bottom: -3%;
+  }
+
+  .rc_content .menu h2.fraseEtec {
+    opacity: 0;
+  }
+
+  .rc_content .menu .icones {
+    flex-direction: row;
+    margin-right: 15%;
+    margin-top: -13%;
+  }
+
+  .rc_content .menu .icones svg {
+    padding: 0 10px;
+  }
 }
