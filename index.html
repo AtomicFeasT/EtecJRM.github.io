@@ -14,6 +14,7 @@
 
 			<script src="./js/themeSwitcher.js"></script>
 			<script src="./js/responsiveMenu.js"></script>
+  			<script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM"></script>
 		</head>
 		
         <body onload="toggleTheme()">
@@ -61,21 +62,112 @@
 
 				<div class="rc_content">
                     <div class="menu">
-                        
-                        <!--<svg version="1.0" id="logoEtec" xmlns="http://www.w3.org/2000/svg" width="180px" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
-                            <g id="layer101" fill="#820024" stroke="none">
-                                <path d="M477 965 c-9 -19 -19 -63 -23 -98 l-6 -64 -97 -17 c-116 -20 -114 -20 -173 -18 -41 2 -48 5 -48 22 0 25 44 125 59 134 17 11 13 26 -7 26 -38 0 -90 -49 -124 -117 -29 -59 -33 -77 -32 -141 1 -76 9 -92 47 -92 9 0 22 11 28 24 7 15 17 22 28 19 9 -2 77 -10 151 -17 l135 -12 -120 -8 c-119 -7 -244 -21 -277 -32 -24 -7 -23 -49 1 -60 17 -8 146 -163 334 -403 26 -33 47 -69 47 -81 0 -46 45 -4 55 52 7 36 9 38 45 38 36 0 38 -2 45 -37 10 -58 55 -99 55 -52 0 26 353 471 382 481 14 6 18 15 16 35 -3 27 -6 28 -83 40 -44 6 -136 15 -205 19 l-125 8 135 12 c74 7 143 15 153 18 12 3 21 -3 28 -20 7 -20 15 -25 36 -22 24 3 29 9 36 48 11 63 1 119 -34 190 -31 61 -85 110 -121 110 -20 0 -24 -15 -8 -25 16 -10 48 -77 55 -118 l7 -37 -48 -2 c-61 -2 -59 -2 -175 18 l-96 17 -6 56 c-7 63 -29 133 -43 138 -6 2 -18 -12 -27 -32z m-15 -236 c7 -50 69 -49 76 0 3 22 6 22 110 16 150 -8 212 -15 212 -24 0 -16 -60 -33 -204 -58 l-151 -25 -135 21 c-179 28 -246 48 -227 67 4 4 57 10 119 14 201 12 196 13 200 -11z m-350 -241 c8 -7 41 -51 73 -98 32 -47 72 -105 90 -130 37 -52 53 -80 38 -65 -9 9 -139 177 -207 268 -28 36 -25 49 6 25z m801 0 c-6 -7 -60 -79 -122 -160 -62 -82 -114 -148 -117 -148 -2 0 17 30 43 68 25 37 71 103 101 147 55 80 78 105 95 105 6 0 6 -5 0 -12z m-718 -30 c28 -39 165 -273 165 -281 0 -5 -45 60 -100 143 -55 82 -100 153 -100 155 0 13 21 3 35 -17z m560 -117 c-48 -72 -89 -131 -92 -131 -3 0 5 17 17 38 13 20 45 76 72 125 44 76 75 113 86 102 2 -1 -36 -62 -83 -134z m-428 102 l82 -17 21 -48 c20 -46 20 -49 4 -148 -10 -55 -21 -100 -26 -100 -4 0 -8 5 -8 12 0 6 -38 78 -85 160 -47 82 -85 151 -85 154 0 6 9 5 97 -13z m443 11 c0 -7 -156 -284 -174 -309 -12 -16 -14 -10 -25 59 -15 104 -14 149 5 189 15 31 23 35 88 49 80 18 106 21 106 12z m-240 -29 c0 -11 -24 -55 -31 -55 -4 0 -12 14 -18 30 -10 29 -9 30 20 30 16 0 29 -2 29 -5z m-11 -195 c6 -28 11 -53 11 -55 0 -7 -45 -6 -52 0 -7 8 13 105 22 105 5 0 13 -23 19 -50z"/>
-                            </g>
-                            <g id="layer102" fill="#f68933" stroke="none">
-                                <path d="M235 604 c-92 -9 -206 -25 -220 -30 -22 -9 -18 -49 4 -60 17 -8 146 -163 334 -403 26 -33 47 -69 47 -81 0 -46 45 -4 55 53 7 35 9 37 45 37 36 0 38 -2 45 -37 10 -58 55 -99 55 -52 0 26 353 471 382 481 14 6 18 15 16 35 -3 27 -7 29 -83 41 -77 12 -597 24 -680 16z m-123 -116 c8 -7 41 -51 73 -98 32 -47 72 -105 90 -130 37 -52 53 -80 38 -65 -9 9 -139 177 -207 268 -28 36 -25 49 6 25z m801 0 c-6 -7 -60 -79 -122 -160 -62 -82 -114 -148 -117 -148 -2 0 17 30 43 68 25 37 71 103 101 147 55 80 78 105 95 105 6 0 6 -5 0 -12z m-718 -30 c28 -39 165 -273 165 -281 0 -5 -45 60 -100 143 -55 82 -100 153 -100 155 0 13 21 3 35 -17z m560 -117 c-48 -72 -89 -131 -92 -131 -3 0 5 17 17 38 13 20 45 76 72 125 44 76 75 113 86 102 2 -1 -36 -62 -83 -134z m-428 102 l82 -17 21 -48 c20 -46 20 -49 4 -148 -10 -55 -21 -100 -26 -100 -4 0 -8 5 -8 12 0 6 -38 78 -85 160 -47 82 -85 151 -85 154 0 6 9 5 97 -13z m443 11 c0 -7 -156 -284 -174 -309 -12 -16 -14 -10 -25 59 -15 104 -14 149 5 189 15 31 23 35 88 49 80 18 106 21 106 12z m-240 -29 c0 -11 -24 -55 -31 -55 -4 0 -12 14 -18 30 -10 29 -9 30 20 30 16 0 29 -2 29 -5z m-11 -195 c6 -28 11 -53 11 -55 0 -7 -45 -6 -52 0 -7 8 13 105 22 105 5 0 13 -23 19 -50z"/>
-                            </g>
-						</svg>-->
 						<img src="./Recursos/Imagens/EtecLogo.png" id="logoEtec" width="27%" alt="Etec Jornalista Roberto Marinho">
 
                         <div class="separador"></div>
 						<h1 class="nomeEtec">ETEC JORNALISTA ROBERTO MARINHO</h1>
-						<h2>Através do conhecimento, conquista-se o mundo</h2>
-						<h1>REDES SOCIAIS</h1>
+						<h1 class="redesSociais">REDES SOCIAIS</h1>
+						<h2 class="fraseEtec">Através do conhecimento, conquista-se o mundo</h2>
+						<div class="icones">
+
+							<a href="https://www.youtube.com/user/etecjrm253" target="_blank">
+
+								<svg class="youtube"
+									xmlns="http://www.w3.org/2000/svg" 
+									width="40"
+									height="40"
+									viewBox="0 0 576 512"
+									fill="none"
+									stroke="black"
+									stroke-width=""
+									stroke-linecap="round"
+									stroke-linejoin="round">
+									<path 
+									d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class="">
+									</path>
+								</svg>
+
+							</a>
+							
+							<a href="https://twitter.com/etecjrm253" target="_blank">
+
+								<svg class="twitter"
+									xmlns="http://www.w3.org/2000/svg" 
+									width="40" 
+									height="40" 
+									viewBox="0 0 24 24" 
+									fill="none" 
+									stroke="currentColor" 
+									stroke-width="1.5" 
+									stroke-linecap="round" 
+									stroke-linejoin="round">
+									<path 
+										d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+									</path>
+								</svg>
+
+							</a>
+
+							<a href="https://www.instagram.com/etecjrm253/" target="_blank">
+								<svg class="instagram"
+									xmlns="http://www.w3.org/2000/svg" 
+									width="40" 
+									height="40" 
+									viewBox="0 0 24 24" 
+									fill="none" 
+									stroke="currentColor" 
+									stroke-width="1.5" 
+									stroke-linecap="round" 
+									stroke-linejoin="round" >
+									<rect
+										x="2" 
+										y="2" 
+										width="20" 
+										height="20" 
+										rx="5" 
+										ry="5">
+									</rect>
+									<path 
+										fill="none"
+										d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+									</path>
+									<line 
+										x1="17.5" 
+										y1="6.5" 
+										x2="17.51" 
+										y2="6.5">
+									</line>
+
+									<radialGradient id="rg" r="150%" cx="30%" cy="107%">
+										<stop stop-color="#fdf497" offset="0" />
+										<stop stop-color="#fdf497" offset="0.05" />
+										<stop stop-color="#fd5949" offset="0.45" />
+										<stop stop-color="#d6249f" offset="0.6" />
+										<stop stop-color="#285AEB" offset="0.9" />
+									</radialGradient>
+								</svg>
+							</a>
+
+							<a href="https://www.facebook.com/etecjrm" target="_blank">
+
+								<svg class="facebook"
+									xmlns="http://www.w3.org/2000/svg" 
+									width="40" 
+									height="40" 
+									viewBox="0 0 24 24" 
+									fill="none" 
+									stroke="currentColor" 
+									stroke-width="1.5" 
+									stroke-linecap="round" 
+									stroke-linejoin="round">
+									<path 
+										d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+									</path>
+								</svg>
+
+							</a>
+
+						</div>
 						<div class="separador2"></div>
                         
                     </div>

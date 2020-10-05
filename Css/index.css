@@ -5,6 +5,7 @@
   --body-color: #ececec;
   --orange: #f68b37;
   --dark-orange: #820024;
+  --menu-bg: #fff;
 }
 
 .theme-dark {
@@ -19,6 +20,7 @@
   --body-color:	#808080;
   --orange: #ff6f01;
   --dark-orange: #410012;
+  --menu-bg: #fff;
 }
 
 * {
@@ -34,16 +36,8 @@ body::-webkit-scrollbar-track {
   background: var(--dark-orange);
 }
 
-body::-webkit-scrollbar-track.dark {
-  background: var(--orange);
-}
-
 body::-webkit-scrollbar-thumb {
   background: var(--dark-orange);
-}
-
-body::-webkit-scrollbar-thumb.dark {
-  background: var(--orange);
 }
 
 body {
@@ -130,12 +124,12 @@ body {
 
 .rc_content .menu {
   width: 85%;
-  margin-top: -50px;
-  background: #222427;
-  border: 3px solid var(--orange);
+  margin-top: -3%;
+  background: var(--body-color);
   align-self: center;
   position: relative;
-  min-width: 300px;
+  min-width: 320px;
+  max-width: 1440px;
 }
 
 .rc_content .separador {
@@ -147,14 +141,17 @@ body {
 
 .rc_content .separador2 {
   width: auto;
+  margin-top: 3%;
   height: 28px;
-  background: var(--orange);
-  border-bottom: 5px solid var(--dark-orange)
+  background: var(--dark-orange);
+  border-bottom: 5px solid var(--orange)
 }
 
 .rc_content .menu img#logoEtec {
   float: left;
   padding: 5px 0 0 0;
+  pointer-events: none;
+  user-select: none;
 }
 
 .rc_content div.menu svg g#layer101 {
@@ -171,8 +168,114 @@ body {
   justify-content: center;
 }
 
+.rc_content .menu h1, h2 {
+  font-size: 26px;
+  text-shadow: 5px 3px 5px rgba(0,0,0,0.43);
+}
+
 .rc_content .menu h1.nomeEtec {
-  font-size: 22px;
   float: left;
+  color: var(--dark-orange);
   margin-left: 4%;
+}
+
+.rc_content .menu h1.redesSociais {
+  margin-left: 82%;
+  color: var(--dark-orange)
+}
+
+.rc_content .menu h2.fraseEtec {
+  margin-right: 23%;
+  color: var(--orange);
+}
+
+.rc_content .menu .icones {
+  float: right;
+  margin-top: -4%;
+  margin-right: 2%;
+  user-select: none;
+}
+
+.rc_content .menu .icones a {
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.rc_content .menu .icones a svg {
+  transition: .5s;
+  fill: var(--body-color);
+  stroke: var(--dark-orange);
+  stroke-width: 1px;
+}
+
+.rc_content .menu .icones a svg.youtube {
+  stroke-width: 26px;
+}
+
+.rc_content .menu .icones a svg.youtube:hover {
+  fill: #ff0000;
+}
+
+.rc_content .menu .icones a svg.twitter:hover {
+  fill: #1DA1F2;
+}
+
+.rc_content .menu .icones a svg.instagram:hover path {
+  fill: var(--body-color);
+}
+
+.rc_content .menu .icones a svg.instagram:hover {
+  fill: url(#rg)
+}
+
+.rc_content .menu .icones a svg.facebook:hover {
+  fill: #3b5998;
+}
+
+@media screen and (max-width: 1440px) {
+  .rc_content .menu h2.fraseEtec {
+    margin-right: 18%;
+  }
+
+  .rc_content .menu .icones {
+    margin-top: -5%;
+    margin-right: 3%;
+  }
+
+  .rc_content .menu h1.redesSociais {
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .rc_content .menu h2.fraseEtec {
+    margin-right: 15%;
+  }
+
+  .rc_content .menu .icones a svg {
+    width: 32px;
+  }
+
+  .rc_content .menu h1.redesSociais {
+    font-size: 24px;
+    margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .rc_content .menu h1.nomeEtec, .rc_content .menu h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rc_content .separador2 {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+
 }
