@@ -205,6 +205,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   background: var(--dark-orange);
+  border: 5px solid black;
   /* border: 3px solid red; */
 }
 
