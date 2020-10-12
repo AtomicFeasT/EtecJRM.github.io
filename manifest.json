@@ -1,0 +1,43 @@
+{
+    "name": "ETEC Jornalista Roberto Marinho",
+    "short_name": "ETEC JRM",
+    "start_url": ".",
+    "background_color": "#820024",
+    "theme_color": "#f68b37",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./Recursos/Imagens/etecFavicon-72px.png",
+            "type": "image/png", "sizes": "72x72"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-96px.png",
+            "type": "image/png", "sizes": "96x96"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-128px.png",
+            "type": "image/png", "sizes": "128x128"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-144px.png",
+            "type": "image/png", "sizes": "144x144"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-152px.png",
+            "type": "image/png", "sizes": "152x152"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-192px.png",
+            "type": "image/png", "sizes": "192x192"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-384px.png",
+            "type": "image/png", "sizes": "384x384"
+        },
+        {
+            "src": "./Recursos/Imagens/etecFavicon-512px.png",
+            "type": "image/png", "sizes": "512x512"
+        }
+    ]
+}
