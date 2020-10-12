@@ -7,14 +7,6 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "./Recursos/Imagens/etecFavicon-72px.png",
-            "type": "image/png", "sizes": "72x72"
-        },
-        {
-            "src": "./Recursos/Imagens/etecFavicon-96px.png",
-            "type": "image/png", "sizes": "96x96"
-        },
-        {
             "src": "./Recursos/Imagens/etecFavicon-128px.png",
             "type": "image/png", "sizes": "128x128"
         },
