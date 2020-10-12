@@ -2,10 +2,9 @@
     "name": "ETEC Jornalista Roberto Marinho",
     "short_name": "ETEC JRM",
     "start_url": ".",
-    "background_color": "#820024",
-    "theme_color": "#f68b37",
+    "background_color": "#fff",
+    "theme_color": "#fff",
     "display": "standalone",
-    "orientation": "portrait-primary",
     "icons": [
         {
             "src": "./Recursos/Imagens/etecFavicon-72px.png",
