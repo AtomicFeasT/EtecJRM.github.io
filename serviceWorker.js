@@ -4,7 +4,7 @@ self.addEventListener("install", e => {
             return cache.addAll(
                 [
                     "./",
-                    "./Css/propsito.css",
+                    "./css/propsito.css",
                     "./Recursos/Imagens/etecFavicon-72px.png",
                     "./Recursos/Imagens/etecFavicon-96px.png",
                     "./Recursos/Imagens/etecFavicon-128px.png",
