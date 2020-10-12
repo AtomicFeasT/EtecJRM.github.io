@@ -11,7 +11,7 @@ self.addEventListener("install", e => {
                     "./Recursos/Imagens/etecFavicon-192px.png",
                     "./Recursos/Imagens/etecFavicon-384px.png",
                     "./Recursos/Imagens/etecFavicon-512px.png",
-                    "./Recursos/Imagens/EtecJRM.webp",
+                    "./Recursos/Imagens/EtecJRM-min.jpg",
                     "./Recursos/Svg/etec.svg"
                 ]
             )
