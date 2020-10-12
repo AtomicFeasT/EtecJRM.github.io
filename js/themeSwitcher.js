@@ -19,12 +19,9 @@
   (function () {
     if (localStorage.getItem("theme") === "theme-dark") {
       setTheme("theme-dark");
-      document.getElementById("slider").checked = false;
     } else if (localStorage.getItem("theme") === "theme-light"){
       setTheme("theme-light");
-      document.getElementById("slider").checked = true;
     } else {
       setTheme("theme-contrast");
-      document.getElementById("slider").checked = true;
     }
   })(); 
