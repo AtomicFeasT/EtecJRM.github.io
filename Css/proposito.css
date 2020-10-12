@@ -147,6 +147,11 @@ header #menu .icones svg {
   stroke: var(--dark-orange);
   padding: 0 5px;
   cursor: pointer;
+  transition: .3s;
+}
+
+header #menu .icones svg:hover {
+  stroke: var(--orange);
 }
 
 header #menu .quarto {
@@ -242,7 +247,8 @@ footer section div header h1 {
 }
 
 footer section div h1,
-footer section div p {
+footer section div p,
+footer section div a {
   font-family: 'Roboto', sans-serif;
   color: white;
   padding: 2% 0;
@@ -255,6 +261,7 @@ footer section .social .icones a {
 
 footer section .social .icones a svg {
   stroke: var(--orange);
+  cursor: pointer;
 }
 
 footer .direitosAutorais {
