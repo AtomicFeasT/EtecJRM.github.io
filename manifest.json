@@ -7,27 +7,27 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "./Recursos/Imagens/etecFavicon-128px.png",
+            "src": "./recursos/images/favicon/etecFavicon-128px.png",
             "type": "image/png", "sizes": "128x128"
         },
         {
-            "src": "./Recursos/Imagens/etecFavicon-144px.png",
+            "src": "./recursos/images/favicon/etecFavicon-144px.png",
             "type": "image/png", "sizes": "144x144"
         },
         {
-            "src": "./Recursos/Imagens/etecFavicon-152px.png",
+            "src": "./recursos/images/favicon/etecFavicon-152px.png",
             "type": "image/png", "sizes": "152x152"
         },
         {
-            "src": "./Recursos/Imagens/etecFavicon-192px.png",
+            "src": "./recursos/images/favicon/etecFavicon-192px.png",
             "type": "image/png", "sizes": "192x192"
         },
         {
-            "src": "./Recursos/Imagens/etecFavicon-384px.png",
+            "src": "./recursos/images/favicon/etecFavicon-384px.png",
             "type": "image/png", "sizes": "384x384"
         },
         {
-            "src": "./Recursos/Imagens/etecFavicon-512px.png",
+            "src": "./recursos/images/favicon/etecFavicon-512px.png",
             "type": "image/png", "sizes": "512x512"
         }
     ]

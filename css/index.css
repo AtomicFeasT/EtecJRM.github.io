@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 .theme-light {
   --nav-color: #fff;
-  --body-color: #ececec;
+  --body-color: #fff;
   --orange: #f68b37;
   --dark-orange: #820024;
-  --menu-bg: #fff;
+  --font-color: #292b31;
+  --section-bg: #fff;
 }
 
 .theme-dark {
@@ -13,6 +12,8 @@
   --body-color: #292b31;
   --orange: #820024;
   --dark-orange: #f68b37;
+  --font-color: #fff;
+  --section-bg: #000;
 }
 
 .theme-contrast {
@@ -21,6 +22,8 @@
   --orange: #ff6f01;
   --dark-orange: #410012;
   --menu-bg: #fff;
+  --font-color: #fff;
+  --section-bg: #000;
 }
 
 * {
@@ -33,7 +36,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--dark-orange);
+  background: var(--orange);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -41,381 +44,318 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--body-color);
-}
-
-.rc_nav {
-  overflow: hidden;
-  background-color: var(--bg-color);
-  text-align: center;
-  z-index: 6;
-  border-bottom-style: solid;
-  border-color: var(--dark-orange);
-}
-
-.rc_nav a {
-  display: inline-block;
-  margin-right: -4px;
-  color: var(--dark-orange);
-  padding: 22px 22px;
-  text-decoration: none;
-  font-family: Roboto;
-  font-size: 18px;
-  -webkit-transition: background 0.2s linear;
-  -moz-transition: background 0.2s linear;
-  -ms-transition: background 0.2s linear;
-  -o-transition: background 0.2s linear;
-  transition: background 0.2s linear;
-  z-index: 9;
-}
-
-.rc_nav a:hover {
-  background-color: var(--dark-orange);
-  color: var(--orange);
-}
-
-.rc_nav .icon {
-  display: none;
-}
-
-.rc_content {
-  text-align: center;
-  padding-left: 14px;
-  font-family: Poppins;
-  margin-top: 100px;
-  color: black;
-}
-
-.rc_nav .active {
-  background-color: var(--dark-orange);
-  color: var(--orange);
-}
-
-@media screen and (max-width: 820px) {
-  .rc_nav a {
-    display: none;
-  }
-  .rc_nav a.icon {
-    float: right;
-    display: block;
-    width: 60px;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .rc_nav.responsive {
-    position: relative;
-    top: 73px;
-  }
-  .rc_nav.responsive .icon {
-    position: fixed;
-    right: 0;
-    top: 0;
-  }
-  .rc_nav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-}
-
-.rc_content .menu {
-  width: 85%;
-  margin-top: -3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--body-color);
-  align-self: center;
-  position: relative;
-  min-width: 320px;
-  max-width: 1440px;
+  background-image: url('../recursos/images/background-images/etecjrm.jpg');
+  background-size: 93% 35%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  z-index: -5;
 }
 
-.rc_content .separador {
-  margin-left: 30%;
-  height: 28px;
+body strong {
+  font-weight: 700;
+}
+
+header {
+  margin-top: 0 !important;
+  width: 94% !important;
+  margin-bottom: 0 !important;
+  background: transparent;
+}
+
+header, nav, #menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  /* border: 2px solid green; */
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav .menu {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav .menu a {
+  padding: 2% 2%;
+  text-decoration: none;
+  color: var(--dark-orange);
+  transition: .3s;
+  font-size: 20px;
+}
+
+header nav .menu a.active {
+  color: var(--orange);
+}
+
+header nav .menu a:hover {
+  color: var(--orange);
+}
+
+@media screen and (max-width: 805px) {
+  header nav .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+header #menu {
+  width: 60%;
+}
+
+ header nav #separador {
+  height: 7px;
+  width: 100%;
+}
+
+header #menu #separador {
+  height: 10px;
+  width: 100%;
+}
+
+ header nav .primeiro {
+  background: black;
+  border-bottom: 7px solid var(--dark-orange);
+  margin-bottom: 1%;
+}
+
+ header nav .segundo {
   background: var(--dark-orange);
-  border-bottom: 5px solid var(--orange)
+  border-bottom: 7px solid black;
+  margin-top: 1%;
 }
 
-.rc_content .separador2 {
-  width: auto;
-  margin-top: 3%;
-  height: 28px;
+ header #menu .terceiro {
   background: var(--dark-orange);
-  border-bottom: 5px solid var(--orange)
+  border-bottom: 6px solid black;
 }
 
-.rc_content .menu img#logoEtec {
-  float: left;
-  padding: 5px 0 0 0;
-  pointer-events: none;
+header #menu .logoEtec {
+  margin-top: 1%;
   user-select: none;
+  pointer-events: none;
 }
 
-.rc_content div.menu svg g#layer101 {
+header #menu .logoEtec #layer101,
+header #menu .logoEtec #layer102 {
   fill: var(--dark-orange);
 }
 
-.rc_content div.menu svg g#layer102 {
-  fill: var(--orange);
+header #menu h1.nomeEtec {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 3%;
+  text-align: center;
+  color: white;
 }
 
-.rc_content {
+header #menu h2.fraseEtec {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -1%;
+  margin-left: 1%;
+  color: white;
+}
+
+header #menu .icones a {
+  text-decoration: none;
+}
+
+header #menu .icones svg {
+  stroke: var(--dark-orange);
+  padding: 0 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+header #menu .icones svg:hover {
+  stroke: var(--orange);
+}
+
+header #menu .quarto {
+  background: var(--dark-orange);
+  border-bottom: 6px solid black;
+}
+
+main {
+  width: 94% !important;
+}
+
+main, section, .nomeSection, .imgLink {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  color: var(--font-color);
+}
+
+main section {
+  width: 100%;
+}
+
+main .nomeSection h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+main .nomeSection {
+  border-top: 5px solid var(--dark-orange);
+  border-left: 5px solid var(--dark-orange);
+  border-right: 5px solid var(--dark-orange);
+  box-shadow: 0px 11px 0px -5px var(--section-bg);
+  padding: 0 20px;
+  z-index: 3;
+  background: var(--section-bg);
+}
+
+main section a.imgLink {
+  width: 60%;
+  padding-top: 4%;
+}
+
+main section a .acolhimentoImg {
+  width: 100%;
+}
+
+main .acolhimentoTxt {
+  margin: 1% 20%;
+}
+
+main section {
+  border: 5px solid var(--dark-orange);
+  background: var(--section-bg);
+}
+
+main section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 3% 6%;
+}
+
+main section .acolhimentoTxt a {
+  color: inherit;
+}
+
+main section #mais {
+  display: none;
+}
+
+main section .video1 {
+  width: 60%;
+  height: 480px;
+  padding: 1% 0;
+}
+
+main section .calendarioEtec {
+  color: inherit;
+}
+
+main section .denuncie {
+  width: 60%;
+  padding: 1% 0;
+}
+
+main section .distanciaLink {
+  width: 60%;
+  padding: 1% 0;
+}
+
+main section .aulasDistancia {
+  width: 100%;
+}
+
+footer {
+  width: 94%;
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--dark-orange);
+  border: 5px solid black;
+  /* border: 3px solid red; */
+}
+
+footer section {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  align-items: start;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 3px solid green; */
+}
+
+footer section div {
+  text-align: left;
+  padding: 0 3%;
+  /* border: 3px solid blue; */
+}
+
+footer section .social .icones {
+  padding: 0;
+}
+
+footer section div header {
+  /* border: 3px solid orange; */
+}
+
+footer section div header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+footer section div h1,
+footer section div p,
+footer section div a {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 2% 0;
+  margin: 0;
+}
+
+footer section .social .icones a {
+  text-decoration: none;
+}
+
+footer section .social .icones a svg {
+  stroke: var(--orange);
+  cursor: pointer;
+}
+
+footer .direitosAutorais {
+  display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
 }
 
-.rc_content .menu h1, h2 {
-  font-size: 26px;
-  text-shadow: 5px 3px 5px rgba(0,0,0,0.43);
+footer .direitosAutorais .quinto {
+  width: 80%;
+  height: 4px;
+  align-self: center;
+  background: black;
 }
 
-.rc_content .menu h1.nomeEtec {
-  float: left;
-  color: var(--dark-orange);
-  margin-left: 4%;
-}
-
-.rc_content .menu h1.redesSociais {
-  margin-left: 82%;
-  color: var(--dark-orange)
-}
-
-.rc_content .menu h2.fraseEtec {
-  margin-right: 23%;
-  color: var(--orange);
-  font-family: 'Slabo 27px', sans-serif !important;
-}
-
-.rc_content .menu .icones {
-  float: right;
-  margin-top: -4%;
-  margin-right: 2%;
-  user-select: none;
-}
-
-.rc_content .menu .icones a {
-  cursor: pointer;
-  user-select: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.rc_content .menu .icones a svg {
-  transition: .5s;
-  fill: var(--body-color);
-  stroke: var(--dark-orange);
-  stroke-width: 1px;
-}
-
-.rc_content .menu .icones a svg.youtube {
-  stroke-width: 26px;
-}
-
-.rc_content .menu .icones a svg.youtube:hover {
-  fill: #ff0000;
-}
-
-.rc_content .menu .icones a svg.twitter:hover {
-  fill: #1DA1F2;
-}
-
-.rc_content .menu .icones a svg.instagram:hover path {
-  fill: var(--body-color);
-}
-
-.rc_content .menu .icones a svg.instagram:hover {
-  fill: url(#rg)
-}
-
-.rc_content .menu .icones a svg.facebook:hover {
-  fill: #3b5998;
-}
-
-@media screen and (min-width: 1920px) {
-  .rc_content .menu h2.fraseEtec {
-    margin-right: 26%;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .rc_content .menu h2.fraseEtec {
-    margin-right: 19%;
-  }
-
-  .rc_content .menu .icones {
-    margin-top: -5%;
-    margin-right: 3%;
-  }
-
-  .rc_content .menu h1.redesSociais {
-    margin-right: 3%;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .rc_content .menu h2.fraseEtec {
-    margin-right: 16%;
-  }
-
-  .rc_content .menu .icones a svg {
-    width: 32px;
-  }
-
-  .rc_content .menu h1.redesSociais {
-    font-size: 24px;
-    margin-right: 1%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .rc_content .menu h2.fraseEtec {
-    margin-right: 17%;
-  }
-
-  .rc_content .menu h1.nomeEtec, .rc_content .menu h2 {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .rc_content .separador {
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .rc_content .separador2 {
-    margin-top: 6%;
-  }
-
-  .rc_content .menu #logoEtec {
-    margin-top: 10%;
-  }
-
-  .rc_content .menu h1.nomeEtec {
-    margin-top: 6%;
-    margin-left: 5%;
-  }
-
-  .rc_content .menu h1.redesSociais {
-    display: none;
-  }
-
-  .rc_content .menu h2.fraseEtec {
-    margin-right: 13%;
-    text-align: left;
-    margin-left: 32%;
-  }
-  
-  .rc_content .menu .icones {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: -18%;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .rc_content .menu .icones {
-    margin-top: -22%;
-  }
-
-  .rc_content .menu #logoEtec {
-    margin-top: 12%;
-  }
-
-  .rc_content .menu h1.nomeEtec {
-    margin-left: 4%;
-     font-size: 22px;
-  }
-
-  .rc_content .menu h2.fraseEtec {
-    margin-right: 11%;
-    margin-left: 31%;
-    text-align: left;
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .rc_content .menu h1.nomeEtec {
-    font-size: 20px
-  }
-
-  .rc_content .menu .icones {
-    margin-top: -23%;
-  }
-}
-
-
-@media screen and (max-width: 622px) {
-  .rc_content .menu h2.fraseEtec {
-    opacity: 0;
-  }
-
-  .rc_content .menu h1.nomeEtec {
-    margin-top: -11%;
-    margin-left: 28%;
-  }
-
-  .rc_content .menu #logoEtec {
-    margin-top: 10%;
-  }
-
-  .rc_content .menu .icones {
-    flex-direction: row;
-    margin-top: -6%;
-    margin-right: 18%;
-  }
-
-  .rc_content .menu .icones svg {
-    padding: 0 10px;
-  }
-}
-
-@media screen and (max-width: 529px) {
-  .rc_content .menu .icones {
-    margin-top: -9%;
-    margin-right: 27%;
-  }
-}
-
-@media screen and (max-width: 438px) {
-  .rc_content .menu .icones {
-    margin-right: 21%;
-    margin-top: -13%;
-  }
-
-  .rc_content .menu h1.nomeEtec {
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-top: 17%;
-    margin-bottom: -6%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .rc_content .menu h1.nomeEtec {
-    font-size: 18px;
-    margin-top: 15%;
-    margin-left: 4%;
-    margin-right: 0%;
-    margin-bottom: -3%;
-  }
-
-  .rc_content .menu h2.fraseEtec {
-    opacity: 0;
-  }
-
-  .rc_content .menu .icones {
-    flex-direction: row;
-    margin-right: 22%;
-    margin-top: -13%;
-  }
-
-  .rc_content .menu .icones svg {
-    padding: 0 10px;
-  }
+footer .direitosAutorais h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }

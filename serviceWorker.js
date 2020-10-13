@@ -5,14 +5,14 @@ self.addEventListener("install", e => {
                 [
                     "./",
                     "./css/propsito.css",
-                    "./Recursos/Imagens/etecFavicon-128px.png",
-                    "./Recursos/Imagens/etecFavicon-144px.png",
-                    "./Recursos/Imagens/etecFavicon-152px.png",
-                    "./Recursos/Imagens/etecFavicon-192px.png",
-                    "./Recursos/Imagens/etecFavicon-384px.png",
-                    "./Recursos/Imagens/etecFavicon-512px.png",
-                    "./Recursos/Imagens/EtecJRM-min.jpg",
-                    "./Recursos/Svg/etec.svg"
+                    "./recursos/images/favicon/etecFavicon-128px.png",
+                    "./recursos/images/favicon/etecFavicon-144px.png",
+                    "./recursos/images/favicon/etecFavicon-152px.png",
+                    "./recursos/images/favicon/etecFavicon-192px.png",
+                    "./recursos/images/favicon/etecFavicon-384px.png",
+                    "./recursos/images/favicon/etecFavicon-512px.png",
+                    "./recursos/images/favicon/EtecJRM-min.jpg",
+                    "./recursos/svg/etec.svg"
                 ]
             )
         })
