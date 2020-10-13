@@ -1,9 +1,10 @@
 self.addEventListener("install", e => {
     e.waitUntil(
-        cahces.open("static").then(cache => {
+        caches.open("static").then(cache => {
             return cache.addAll(
                 [
                     "./",
+                    "./css/index.css",
                     "./css/propsito.css",
                     "./recursos/images/favicon/etecFavicon-128px.png",
                     "./recursos/images/favicon/etecFavicon-144px.png",
@@ -11,7 +12,8 @@ self.addEventListener("install", e => {
                     "./recursos/images/favicon/etecFavicon-192px.png",
                     "./recursos/images/favicon/etecFavicon-384px.png",
                     "./recursos/images/favicon/etecFavicon-512px.png",
-                    "./recursos/images/favicon/EtecJRM-min.jpg",
+                    "./recursos/images/background-images/etecjrm.jpg",
+                    "./recursos/images/background-images/etecjrm2.jpg",
                     "./recursos/svg/etec.svg"
                 ]
             )

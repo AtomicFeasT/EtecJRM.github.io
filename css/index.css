@@ -89,7 +89,7 @@ header nav .menu {
 }
 
 header nav .menu a {
-  padding: 2% 2%;
+  padding: 1% 2%;
   text-decoration: none;
   color: var(--dark-orange);
   transition: .3s;
@@ -97,11 +97,13 @@ header nav .menu a {
 }
 
 header nav .menu a.active {
-  color: var(--orange);
+  color: var(--dark-orange);
+  background: var(--orange);
 }
 
 header nav .menu a:hover {
-  color: var(--orange);
+  color: var(--dark-orange);
+  background: var(--orange);
 }
 
 @media screen and (max-width: 805px) {
