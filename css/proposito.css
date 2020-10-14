@@ -172,8 +172,18 @@ header #menu h2.fraseEtec {
   color: white;
 }
 
+header #menu .icones {
+  width: 100;
+  display: flex;
+  justify-content: center;
+}
+
 header #menu .icones a {
   text-decoration: none;
+}
+
+header #menu .icones a svg.twitter {
+  padding: 0 20%;
 }
 
 header #menu .icones svg {

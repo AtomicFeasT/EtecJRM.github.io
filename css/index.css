@@ -177,8 +177,8 @@ header #menu .icones {
   justify-content: center;
 }
 
-header #menu .icones a svg.twitter {
-  padding: 0 20%;
+header #menu .icones a.twitter {
+  padding: 0 1%;
 }
 
 header #menu .icones a {
@@ -267,12 +267,23 @@ main section #mais {
 
 main section .video1 {
   width: 60%;
-  height: 480px;
   padding: 1% 0;
+  margin: 1% 0;
 }
 
 main section .calendarioEtec {
   color: inherit;
+  width: 60%;
+  text-decoration: none;
+  background: rgb(243, 33, 33);
+  text-align: center;
+  color: white;
+  transition: .6s;
+}
+
+main section .calendarioEtec:hover {
+  text-decoration: underline;
+  opacity: 0.7;
 }
 
 main section .denuncie {
@@ -287,6 +298,26 @@ main section .distanciaLink {
 
 main section .aulasDistancia {
   width: 100%;
+}
+
+main section .video2 {
+  width: 60%;
+  margin: 1% 0;
+  margin-bottom: 5%;
+}
+
+main section #separador {
+  width: 60%;
+  height: 4px;
+  background: var(--dark-orange);
+  margin-bottom: 1%;
+} 
+
+main section .carouselText {
+  color: white;
+  font-size: 20px;
+  margin: 0 20%;
+  text-align: center;
 }
 
 footer {
