@@ -314,7 +314,7 @@ main section #separador {
 } 
 
 main section .carouselText {
-  color: white;
+  color: var(--font-color);
   font-size: 20px;
   margin: 0 20%;
   text-align: center;
