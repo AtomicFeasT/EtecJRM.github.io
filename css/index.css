@@ -62,7 +62,6 @@ body strong {
 header {
   margin-top: 0 !important;
   width: 94% !important;
-  margin-bottom: 0 !important;
   background: transparent;
 }
 
@@ -78,6 +77,7 @@ header, nav, #menu {
 
 header nav {
   width: 100%;
+  background: var(--body-color);
 }
 
 header nav .menu {
@@ -117,7 +117,7 @@ header #menu {
   width: 60%;
 }
 
- header nav #separador {
+header nav #separador {
   height: 7px;
   width: 100%;
 }
@@ -127,19 +127,20 @@ header #menu #separador {
   width: 100%;
 }
 
- header nav .primeiro {
+header .primeiro,
+header nav .primeiro {
   background: black;
   border-bottom: 7px solid var(--dark-orange);
   margin-bottom: 1%;
 }
 
- header nav .segundo {
+header nav .segundo {
   background: var(--dark-orange);
   border-bottom: 7px solid black;
   margin-top: 1%;
 }
 
- header #menu .terceiro {
+header #menu .terceiro {
   background: var(--dark-orange);
   border-bottom: 6px solid black;
 }
