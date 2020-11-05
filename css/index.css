@@ -88,7 +88,7 @@ header nav .menu {
 }
 
 header nav .menu a {
-  padding: 1% 2%;
+  padding: 1% 1%;
   text-decoration: none;
   color: var(--dark-orange);
   transition: .3s;
@@ -275,9 +275,9 @@ main section .calendarioEtec {
   color: inherit;
   width: 60%;
   text-decoration: none;
-  background: rgb(243, 33, 33);
+  background: var(--dark-orange);
   text-align: center;
-  color: white;
+  color: var(--orange);
   transition: .6s;
 }
 
