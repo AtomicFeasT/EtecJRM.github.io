@@ -23,8 +23,9 @@
   <meta name="theme-color" content="#820024">
 
   <script src="../js/index.js"></script>
-  <script src="../js/themeSwitcher.js"></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" type="text/javascript"></script>
 </head>
 
 <body onload="toggleTheme()">
@@ -32,11 +33,12 @@
     <nav>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="../index.html" rel="noopener">INÍCIO</a>
+        <a href="../" rel="noopener">INÍCIO</a>
         <a href="./proposito.html" rel="noopener" class="active">PROPÓSITO</a>
-        <a href="#" rel="noopener">ESPAÇO DO ALUNO</a>
+        <a href="./espacoAluno.html" rel="noopener">ESPAÇO DO ALUNO</a>
         <a href="#" rel="noopener">CURSOS TÉCNICOS</a>
         <a href="#" rel="noopener">BLOG</a>
+        <a href="#" rel="noopener">AGENDA</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -92,7 +94,7 @@
           </svg>
         </a>
         
-        <a href="https://twitter.com/etecjrm253" rel="noopener" target="_blank">
+        <a class="twitter" href="https://twitter.com/etecjrm253" rel="noopener" target="_blank">
           <svg class="twitter"
             xmlns="http://www.w3.org/2000/svg" 
             width="40" 
@@ -171,44 +173,38 @@
     </div>
   </header>
 
-  <main>
+  <main id="section">
     <div class="nomeSection">
       <h1>PROPÓSITO</h1>
     </div>
 
     <section>
-      <h1>HISTÓRIA</h1>
-      <p>Desde 01 de Agosto de 2011, a cidade de São Paulo e a sua região 
-        metropolitana ganha a Escola Técnica Estadual Jornalista Roberto 
-        Marinho (Etec JRM), fruto de convênio entre o Governo do Estado de 
-        São Paulo, Fundação Roberto Marinho e TV Globo. A Etec JRM passa a 
-        integrar ao Centro Estadual de Educação Tecnológica Paula Souza – 
-        maior instituição de Educação Profissional do Pais. Os cursos – 
-        Multimidia (duração de três semestres) e Produção de Áudio e Vídeo 
-        (duração de quatro semestres) - foram elaborados por especialistas 
-        do Centro Paula Souza em parceria com profissionais da Globo. Caberá 
-        ao Paula Souza o acompanhamento do processo seletivo, a contratação 
-        de professores, a compra de mobiliário e equipamentos e a infraestrutura 
-        para o funcionamento dos cursos. O prédio da nova Etec foi construído 
-        pela Globo, em terreno cedido pelo governo estadual. Coube também à 
-        empresa a implementação do projeto de paisagismo na área da escola. 
-        O Centro Paula Souza ficou responsável pelo acompanhamento do processo 
-        seletivo dos estudantes, pela contratação de professores, compra de 
-        mobiliário e equipamentos e pela infraestrutura para o funcionamento 
-        dos cursos e sua manutenção. Além das aulas teóricas realizadas em 
-        uma das 06 salas de aulas, as atividades práticas dos quatro cursos 
-        acontecem em um dos 05 laboratórios de Informática, sendo dois deles 
-        compostos com 25 Macintosh de última geração e também no estúdio de 
-        áudio e vídeo em fase de montagem nas dependências da Etec.</p><br>
-      <h1>MISSÃO</h1>
-      <p>Promover a educação profissional pública de excelência, nas 
-        área de produção cultural e design, visando ao atendimento das 
-        demandas sociais e do mundo do trabalho na área em questão.</p>
-      <h1>VISÃO</h1>
-      <p>Consolidar-se como Unidade de Ensino de excelência e estímulo 
-        ao desenvolvimento humano e tecnológico, tendo como princípio 
-        a utilização dos meios de comunicação em sua mais alta performance 
-        e eficiência.</p>
+        <h1>HISTÓRIA</h1>
+        <p>Desde 01 de Agosto de 2011, a cidade de São Paulo e a sua região metropolitana ganha a Escola Técnica Estadual 
+            Jornalista Roberto Marinho (Etec JRM), fruto de convênio entre o Governo do Estado de São Paulo, Fundação 
+            Roberto Marinho e TV Globo. A Etec JRM passa a integrar ao Centro Estadual de Educação Tecnológica Paula Souza
+             – maior instituição de Educação Profissional do Pais. Os cursos – Multimidia (duração de três semestres) e 
+             Produção de Áudio e Vídeo (duração de quatro semestres) - foram elaborados por especialistas do Centro Paula 
+             Souza em parceria com profissionais da Globo. Caberá ao Paula Souza o acompanhamento do processo seletivo, a 
+             contratação de professores, a compra de mobiliário e equipamentos e a infraestrutura para o funcionamento dos 
+             cursos. O prédio da nova Etec foi construído pela Globo, em terreno cedido pelo governo estadual. Coube também 
+             à empresa a implementação do projeto de paisagismo na área da escola. O Centro Paula Souza ficou responsável 
+             pelo acompanhamento do processo seletivo dos estudantes, pela contratação de professores, compra de mobiliário 
+             e equipamentos e pela infraestrutura para o funcionamento dos cursos e sua manutenção. Além das aulas teóricas 
+             realizadas em uma das 06 salas de aulas, as atividades práticas dos quatro cursos acontecem em um dos 05 laboratórios 
+             de Informática, sendo dois deles compostos com 25 Macintosh de última geração e também no estúdio de áudio e 
+             vídeo em fase de montagem nas dependências da Etec.
+        </p>
+
+        <h1>MISSÃO</h1>
+        <p>Promover a educação profissional pública de excelência, nas área de produção cultural e design, visando ao atendimento 
+            das demandas sociais e do mundo do trabalho na área em questão.
+        </p>
+
+        <h1>VISÃO</h1>
+        <p>Consolidar-se como Unidade de Ensino de excelência e estímulo ao desenvolvimento humano e tecnológico, tendo como princípio 
+            a utilização dos meios de comunicação em sua mais alta performance e eficiência.
+        </p>
     </section>
   </main>
 
@@ -349,7 +345,7 @@
             </svg>
           </a>
     
-            <a href="https://www.facebook.com/etecjrm" rel="noopener" target="_blank">
+          <a href="https://www.facebook.com/etecjrm" rel="noopener" target="_blank">
             <svg class="facebook"
               xmlns="http://www.w3.org/2000/svg" 
               width="36" 
@@ -376,6 +372,12 @@
     </div>
   </footer>
 
+  <script>
+    jQuery(document).ready(function($) {
+      $(".input #rg").mask("99.999.999-99");  
+      $(".input #rg").mask("99.999.999-99",{autoclear: false});
+    });
+  </script>
 </body>
 
 </html>

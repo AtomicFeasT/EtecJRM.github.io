@@ -5,12 +5,13 @@ self.addEventListener("install", e => {
                 [
                     "./",
                     "./css/index.css",
-                    "./paginas/proposito.html",
-                    "./css/proposito.css",
+                    "./css/propsito.css",
                     "./recursos/images/favicon/etecFavicon-128px.png",
                     "./recursos/images/favicon/etecFavicon-144px.png",
                     "./recursos/images/favicon/etecFavicon-152px.png",
                     "./recursos/images/favicon/etecFavicon-192px.png",
+                    "./recursos/images/favicon/etecFavicon-384px.png",
+                    "./recursos/images/favicon/etecFavicon-512px.png",
                     "./recursos/images/background-images/etecjrm.jpg",
                     "./recursos/images/background-images/etecjrm2.jpg",
                     "./recursos/svg/etec.svg"
